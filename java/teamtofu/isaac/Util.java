@@ -3,6 +3,7 @@ package teamtofu.isaac;
 import java.util.ArrayList;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -30,8 +31,15 @@ public class Util {
 		}
 	}
 	
-	public static boolean hasIsaacItem(EntityPlayer player, ItemStack item) {
-		return getIsaacInventory(player).contains(item);
+	public static boolean hasIsaacItem(EntityPlayer player, Item item) {
+		ArrayList<ItemStack> inv = getIsaacInventory(player);
+		boolean contains = false;
+		for (ItemStack i : inv) {
+			if (i.getItem() == item) {
+				contains = true;
+			}
+		}
+		return contains;
 	}
 	
 	public static void addIsaacItem(EntityPlayer player, ItemStack item) {

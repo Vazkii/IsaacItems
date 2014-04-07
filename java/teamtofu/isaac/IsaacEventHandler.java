@@ -12,8 +12,9 @@ public class IsaacEventHandler {
 	@SubscribeEvent
 	public void handleHitEvents(LivingHurtEvent event) {
 		if (event.entityLiving instanceof EntityPlayer) {
+			System.out.println("L");
 			EntityPlayer player = (EntityPlayer) event.entityLiving;
-			if (Util.hasIsaacItem(player, new ItemStack(Isaac.wafer))) {
+			if (Util.hasIsaacItem(player, Isaac.wafer)) {
 				event.ammount = 1.0F;
 			}
 		}
