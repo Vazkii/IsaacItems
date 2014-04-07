@@ -38,9 +38,10 @@ public class Isaac {
 	public static CommonProxy proxy;
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		tab = new IsaacTab(CreativeTabs.getNextID(), "isaac");
+
 		wafer = new ItemCollectable().setTextureName("isaac:wafer").setUnlocalizedName("isaac:wafer");
 		GameRegistry.registerItem(wafer, "wafer");
-		tab = new IsaacTab(CreativeTabs.getNextID(), "isaac");
 	}
 	
 	
