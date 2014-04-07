@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Isaac",
+  "name": "Binding of Isaac",
+  "description": "Placeholder",
+  "version": "1.0.0",
+  "mcversion": "1.7.2",
+  "url": "https://github.com/Vazkii/IsaacItems",
+  "updateUrl": "",
+  "authors": ["Flaxbeard","Vazkii"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
