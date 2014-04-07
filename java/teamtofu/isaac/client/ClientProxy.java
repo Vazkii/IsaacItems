@@ -1,6 +1,6 @@
 package teamtofu.isaac.client;
 
-import flaxbeard.steamcraft.common.CommonProxy;
+import teamtofu.isaac.common.CommonProxy;
 
 
 public class ClientProxy extends CommonProxy
